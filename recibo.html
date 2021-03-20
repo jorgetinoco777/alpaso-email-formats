@@ -24,7 +24,8 @@ header {
     width: 100%;
     height: 220px; 
     margin: 0;
-    text-align: center;  
+    text-align: center; 
+    border-radius: 10px;
 }
 
 table{ 
@@ -106,6 +107,20 @@ table{
     color: black;
 }
 
+.caja {
+    padding: 20px 10px;
+    /*background-color: #f3f3f3;*/
+    border-radius: 10px;
+}
+
+.estado {
+    padding: 5px 12px;
+    font-size: 12px;
+    background-color: #20bcae;
+    border-radius: 8px;
+    color: white;
+}
+
 </style>
 </head>
 <body>
@@ -116,43 +131,44 @@ table{
         </div>
 
         <header style="background-color: #f3f3f3;">
-
             <h2 style="padding-top: 80px;">RECIBO DE COMPRA</h2>
-            <img width="50" src="assets/image/recibo_blanco.jpg" alt="recibo de compra" >
-
+            <img width="50" src="assets/image/recibo.jpg" alt="recibo de compra">
         </header>
 
         <table>
             <tr>
-                <td width="100%">
+                <td width="70%">
                     <p class="etiqueta mb-5">Local:</p>
-                    <h4>Mishki Chunchi</h4>
+                    <h4 class="mb-5">Mishki Chunchi</h4>
+                </td>
+                <td align="right">
+                    <span class="estado">ENTREGADO</span>
                 </td>
             </tr>
         </table>
 
-        <table style="margin: 40px 0">
+        <table style="margin: 30px 0">
             <tr>
-                <td width="25%">
+                <td class="caja" width="25%">
                     <p class="etiqueta mb-5 ">Pedido:</p> 
                     <h3 class="">00000001</h3>
                 </td>
-                <td width="25%">
+                <td class="caja" width="25%">
                     <p class="etiqueta mb-5">Total:</p> 
                     <h3 class="">$3.50</h3>
                 </td>
-                <td width="25%">
+                <td class="caja" width="25%">
                     <p class="etiqueta mb-5">Forma de pago:</p>
                     <h3 class="">EFECTIVO</h3>
                 </td>
-                <td width="25%">
+                <td class="caja" width="25%">
                     <p class="etiqueta mb-5">Fecha:</p>
                     <h3 class="">19-03-2021</h3>
                 </td>
             </tr>
         </table>
 
-        <table>
+        <table style="margin-bottom: 50px 0">
             <tr>
                 <td colspan="3">
                     <p class="subtitle mb-10">Detalle de productos</p>
@@ -172,7 +188,7 @@ table{
             </tr>
         </table>
 
-        <table style="margin-top: 70px; padding: 10px 0; background-color: #f3f3f3">
+        <table style="margin-top: 70px; padding: 10px 0; background-color: #f3f3f3; border-radius: 10px;">
             <tr>
                 <td width="100%">
                     <pre class="text-center color-black">Al Paso Delivery - Todos los derechos reservados.</pre>
