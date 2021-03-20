@@ -5,113 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <style>
-*{    
+* {    
     margin: 0;    
     padding: 0;  
 }
+
 body {
     color: #626262;
     font-family: Arial, Helvetica, sans-serif
 }
+
 #container {
     width: 500px;  
     margin: 0 auto;   
 }
+
 header {
     width: 100%;
-    height: 250px; 
+    height: 220px; 
     margin: 0;
     text-align: center;  
 }
-header img{
-    width: 250px;
+
+table{ 
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
 }
-header p{
+
+.img-alpaso-delivery {
+    width: 300px;
+    margin-right: 10px
+}
+
+.local {
+    font-size: 16px;
+}
+
+.header {
+    font-size: 16px;
+}
+
+.title {
     font-size: 14px;
 }
 
-table{ 
-    padding: 15px;
-    float: left;
-    text-align: left;
-    margin-top: 15px;
-}
-table img {
-    width: 30px;
-    margin-right: 10px
-}
-table h2 {
-    font-size: 14px; 
-}
-table p {
-    font-size: 12px; 
+.subtitle {
+    font-size: 12px;
+    color: darkgray;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.fecha {
+    font-size: 12px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.cantidad {
+    font-size: 14px;
+}
+
+.comentario {
+    color: darkgray;
+    font-size: 10px;
+}
+
+.total {
+    font-size: 14px;
+}
+
+.etiqueta {
+    color: darkgray;
+    font-size: 12px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black;
+}
 
 </style>
 </head>
 <body>
     <div id="container">
-        <header>
-            <img src="alpaso.png" alt="alpasodelivery" >
-            <h1>Registro Exitoso</h1>
-            <h3>Fecha: 0000001</h3>
-            <p>Gracias por confiar en Al Paso Delivery, estamos revisando tu registro te informaremos del estado de tu solicitud por este medio.</p>
+
+        <div style="text-align: center; margin-top: 10px;">
+            <img class="img-alpaso-delivery" src="assets/image/alpaso.png" alt="alpasodelivery" >
+        </div>
+
+        <header style="background-color: #f3f3f3;">
+
+            <h2 style="padding-top: 80px;">RECIBO DE COMPRA</h2>
+            <img width="50" src="assets/image/recibo_blanco.jpg" alt="recibo de compra" >
+
         </header>
-        <table >
+
+        <table>
             <tr>
-                <th width="10%"><img src="store.jpg" alt="store"></th>
-                <th width="90%">
-                    <h2>Mishki Chunchi</h2>
-                    <p>Av. General Enriquez y Garcia Moreno</p>
-                </th>
+                <td width="100%">
+                    <p class="etiqueta mb-5">Local:</p>
+                    <h4>Mishki Chunchi</h4>
+                </td>
             </tr>
+        </table>
+
+        <table style="margin: 40px 0">
             <tr>
-                <th width="10%"><img src="pin.png"></th>
-                <th width="90%">
-                    <h2>Los Cafetos</h2>
-                    <p>Casa blanca y amarilla esquina</p>
-                </th>
+                <td width="25%">
+                    <p class="etiqueta mb-5 ">Pedido:</p> 
+                    <h3 class="">00000001</h3>
+                </td>
+                <td width="25%">
+                    <p class="etiqueta mb-5">Total:</p> 
+                    <h3 class="">$3.50</h3>
+                </td>
+                <td width="25%">
+                    <p class="etiqueta mb-5">Forma de pago:</p>
+                    <h3 class="">EFECTIVO</h3>
+                </td>
+                <td width="25%">
+                    <p class="etiqueta mb-5">Fecha:</p>
+                    <h3 class="">19-03-2021</h3>
+                </td>
             </tr>
         </table>
 
         <table>
             <tr>
-                <th>Artículos</th>
+                <td colspan="3">
+                    <p class="subtitle mb-10">Detalle de productos</p>
+                </td>
             </tr>
             <tr>
-                <th width="10%"><img src="store.jpg" alt="store"> </th>
-                <th width="80%">
-                    <h2>1 - Chili nacho</h2>
-                    <p>Sin comentarios</p>
-                </th>
-                <th width="10%"><p>$3.50</p></th>
-            </tr>
-            <tr>
-                <th width="10%"><img src="store.jpg" alt="store"> </th>
-                <th width="80%">
-                    <h2>1 - Chili nacho</h2>
-                    <p>Sin comentarios</p>
-                </th>
-                <th width="10%"><p>$3.50</p></th>
-            </tr>
-            <tr>
-                <th width="10%"><img src="store.jpg" alt="store"> </th>
-                <th width="80%">
-                    <h2>1 - Chili nacho</h2>
-                    <p>Sin comentarios</p>
-                </th>
-                <th width="10%"><p>$3.50</p></th>
+                <td width="15%">
+                    <p class="cantidad">1</p>
+                </td>
+                <td width="70%">
+                    <p class="descripcion">Chili Nacho</p>
+                    <p class="comentario">Sin comentarios</p>
+                </td>
+                <td width="15%">
+                    <p class="total">$3.50</p>
+                </td>
             </tr>
         </table>
 
-        <table>
+        <table style="margin-top: 70px; padding: 10px 0; background-color: #f3f3f3">
             <tr>
-                <th width="100%"><h2><b>Total:</b> $3.50</h2></th>
+                <td width="100%">
+                    <pre class="text-center color-black">Al Paso Delivery - Todos los derechos reservados.</pre>
+                </td>
             </tr>
-            <tr>
-                <th width="100%"><h2><b>Forma Pago:</b> EFECTIVO</h2></th>
-            </tr> 
         </table>
 
     </div>
